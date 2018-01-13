@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  canvas(id="line-chart" width="1080" height="450")
+  .border.border-dark.ml-5.mt-5.float-left.add-stock(style='width: 300px; height: 100px;')
+    .input-group.pt-3
+      input.form-control(type='text', placeholder='Enter stock')
+      span.input-group-btn
+        button#add.btn.btn-info Add
+  .clearfix
+  script(src='javascripts/script.js')
